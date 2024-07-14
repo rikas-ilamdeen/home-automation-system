@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LED Control</title>
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>LED Control</h1>
-    <button onclick="window.location.href='/on'">Turn On</button>
-    <button onclick="window.location.href='/off'">Turn Off</button>
+    <h1>Smart Home Control</h1>
+    <div class="button-container">
+        <h2>Light</h2>
+        <a href="/light/on"><button class="btn">Turn On</button></a>
+        <a href="/light/off"><button class="btn">Turn Off</button></a>
+    </div>
+    <div class="button-container">
+        <h2>Fan</h2>
+        <a href="/fan/on"><button class="btn">Turn On</button></a>
+        <a href="/fan/off"><button class="btn">Turn Off</button></a>
+    </div>
+    <div class="button-container">
+        <h2>AC</h2>
+        <a href="/ac/on"><button class="btn">Turn On</button></a>
+        <a href="/ac/off"><button class="btn">Turn Off</button></a>
+    </div>
 </body>
 </html>
