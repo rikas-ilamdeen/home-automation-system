@@ -10,8 +10,12 @@ GPIO.setwarnings(False)
 # Set up GPIO mode and channels
 GPIO.setmode(GPIO.BCM)
 devices = {
-    'light': 17,
-    'fan': 27,
+    'light1': 17,
+    'light2': 18,
+    'light1': 19,
+    'light2': 20,
+    'fan1': 27,
+    'fan2': 28,
     'ac': 22
 }
 
